@@ -64,4 +64,15 @@ Key behaviors:
 
 - Define body
 - Add message attributes (metadata - optional)
-- Pr
+- Provide Delay Delivery (Optional)
+
+- Get back
+    - Message identifier 
+    - MD5 hash of the body
+
+### SQS - Consuming Messages
+
+- Consumers... 
+    - Poll SQS for messages (recieve up to 10 messages at a time)
+    - Process the message within the visibility timeout
+    - Delete the message using the message ID & receipt handle
